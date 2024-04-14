@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>EduQuest</title>
+  {% load static %}
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'counselor/css/bootstrap.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <link href="{% static 'counselor/css/style.css' %}" rel="stylesheet" />
+  <link href="{% static 'counselor/css/responsive.css' %}" rel="stylesheet" />
+</head>
+
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="{% static 'counselor/img/logo.png' %}" alt="" />
+            <span>
+              EduQuest
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact </a>
+              </li>
+              
+            </ul>
+            <div class="user_option">
+              <a href="">
+                <span>
+                  Login
+                </span>
+              </a>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+          <div>
+            <div class="custom_menu-btn ">
+              <button>
+                <span class=" s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="carousel_btn-container">
+        
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-5 offset-md-1">
+                  <div class="detail-box">
+                    <h1>
+                      Get Personalized <br>
+                      College Preference <br>
+                      Lists
+                    </h1>
+                    <p>
+                      Let our virtual counselor help 
+                      you make informed decisions for your 
+                      college admissions.
+                    </p>
+                    <div class="btn-box">
+                      <a href="{% url 'recom' %}" class="btn-1">
+                        Proceed  
+                      </a>
+                      <a href="{% url 'about' %}" class="btn-2">
+                        About Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="offset-md-1 col-md-4 img-container">
+                  <div class="img-box">
+                    <img src="{% static 'counselor/img/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- experience section -->
+
+  <section class="experience_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="{% static 'counselor/img/experience-img.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Make informed decisions
+              </h2>
+            </div>
+            <p>
+              With our virtual counselor, you can make informed decisions about college admissions.
+              Get accurate and reliable information tailored to your specific criteria.
+
+            </p>
+      
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end experience section -->
+
+  <!-- info section -->
+
+  <section class="info_section ">
+    <div class="info_container layout_padding-top">
+      <div class="container">
+        <div class="info_top">
+          <div class="info_logo">
+            <img src="{% static 'counselor/img/logo.png' %}" alt="" />
+            <span>
+              EduQuest
+            </span>
+          </div>
+          <div class="social_box">
+            <a href="#">
+              <img src="{% static 'counselor/img/fb.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'counselor/img/twitter.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'counselor/img/linkedin.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'counselor/img/instagram.png' %}" alt="">
+            </a>
+            <a href="#">
+              <img src="{% static 'counselor/img/youtube.png' %}" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="info_main">
+          <div class="row">
+            <div class="col-md-3 col-lg-2">
+              <div class="info_link-box">
+                <h5>
+                  Useful Links
+                </h5>
+                <ul>
+                  <li class=" active">
+                    <a class="" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="" href="{% url 'about' %}">About </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="{% url 'contact' %}">Contact </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 col-md-10 mx-auto">
+            <div class="info_contact layout_padding2">
+              <div class="row">
+                <div class="col-md-3">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="{% static 'counselor/img/location.png' %}" alt="" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Location
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="{% static 'counselor/img/mail.png' %}" alt="" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        demo@gmail.com
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-5">
+                  <a href="#" class="link-box">
+                    <div class="img-box">
+                      <img src="{% static 'counselor/img/mail.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                      <h6>
+                        Call +01 1234567890
+                      </h6>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section ">
+    <div class="container">
+      <p>
+        by G6 - minal, om, harshad
+      </p>
+    </div>
+  </footer>
+  <!-- end  footer section -->
+
+  <script src="{% static 'counselor/js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'counselor/js/bootstrap.js' %}"></script>
+  <script src="{% static 'counselor/js/custom.js' %}"></script>
+</body>
+</body>
+
+</html>
